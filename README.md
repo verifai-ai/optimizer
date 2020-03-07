@@ -105,13 +105,13 @@ Figure-6:  Cache Controller Design VerifAI-RL Flow
 Figure below shows the resulting FIFO occupancy for each subsequent iteration (red curve).
 
 <img src="images/FIFO-RL-Img3.png"
-         width="400" height="400" />
+         width="400" height="600" />
 
 
 Note that the RL agent quickly learns how to adjust the DV environment control settings in order to maximize the FIFO occupancy. A set of runs using purely random settings without the benefit of RL-based machine learning is also shown for comparison (blue curve).
 The results shown in Figures below demonstrate how an RL-based approach can quickly and automatically optimize design coverage parameters resulting in better design coverage and accelerated stress testing of a design.
 
-<img src="images/image37.png"
+<img src="images/FIFO-RL-Img4.png"
          width="400" height="400" />
    <img src="images/FIFO-RL-Img2.png"
  width="400" height="400" />
