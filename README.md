@@ -1,5 +1,5 @@
 # verifai
-Verifying code with deep learning
+Verifying hardware and software code with deep learning
 ## Download
 
 Download the wheel file *VERIFAI.AI-1.0-py3-none-any.whl*
