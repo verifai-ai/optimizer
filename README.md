@@ -36,7 +36,7 @@ Download tar ball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimi
 
 Untar it
 ```bash
-tar -xvf  [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)
+tar -xvf  *VERIFAI.AI-1.0.tar.gz*
 ```
 ```bash
 python signup.py
