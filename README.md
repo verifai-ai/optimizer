@@ -58,7 +58,7 @@ The optimizer uses both supervised and reinforcement learning to map the knobs t
 Some other examples of this are in optimal control of electric power and
 
 
-## The FIFO cache controller experiment
+## Hardware Verification Example: FIFO cache controller 
 
 VCS installation instructions here
 
