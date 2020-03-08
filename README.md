@@ -88,12 +88,12 @@ python run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ### The FIFO cache controller experiment
 
 Cache Controller Design - Experiment 1
-The first experiment was a Cache Controller design shown in Fig. The controller supports up to four CPU ports. Input transaction collisions are checked at the input stage where four FIFOs - one per CPU port - holds transactions which fail collision checks with transactions from another CPU ports and hence must be serviced later.
+The first experiment was a Cache Controller design shown in Fig 1. The controller supports up to four CPU ports. Input transaction collisions are checked at the input stage where four FIFOs - one per CPU port - holds transactions which fail collision checks with transactions from another CPU ports and hence must be serviced later.
 
 <img src="images/image34.png"
          width="500" height="300" />
 
-Figure-5:  Cache Controller with 4 CPU Ports
+Figure-1:  Cache Controller with 4 CPU Ports
 
 Input FIFO’s can be so difficult to fill in the presence of random traffic that it seldom or perhaps never reaches a full state even across a very large number of simulations. This has implications for DV coverage since the FIFO must be filled in order to ensure correct operation and to uncover bugs resulting from a FIFO full condition.
 After a suitable number of simulation runs were completed, the resulting DV control settings and the corresponding FIFO occupancy simulation results were fed to an VerifAI-RL agent which, once trained, generated a set of recommended settings to use in a subsequent set of runs. After completing this second set of simulation runs using the settings from the RL agent, the results were again fed into the RL agent which generated a subsequent improved set of recommended settings. This process is summarized in Figure-6  below:
@@ -101,7 +101,7 @@ After a suitable number of simulation runs were completed, the resulting DV cont
 <img src="images/FIFO-RL-Img1.png"
          width="500" height="300" />
 
-Figure-6:  Cache Controller Design VerifAI-RL Flow
+Figure-2:  Cache Controller Design VerifAI-RL Flow
 
 
 Figure below shows the resulting FIFO occupancy for each subsequent iteration (red curve).
@@ -109,6 +109,7 @@ Figure below shows the resulting FIFO occupancy for each subsequent iteration (r
 <img src="images/FIFO-RL-Img3.png"
          width="600" height="400" />
 
+Figure-3:  FIFO Occupancy with VerifAI-RL generated knobs versus Random
 
 Note that the RL agent quickly learns how to adjust the DV environment control settings in order to maximize the FIFO occupancy. A set of runs using purely random settings without the benefit of RL-based machine learning is also shown for comparison (blue curve).
 The results shown in Figures below demonstrate how an RL-based approach can quickly and automatically optimize design coverage parameters resulting in better design coverage and accelerated stress testing of a design.
@@ -118,7 +119,7 @@ The results shown in Figures below demonstrate how an RL-based approach can quic
    <img src="images/FIFO-RL-Img2.png"
  width="400" height="400" />
 
-Figure:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
+Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
 
 
 Here is a link to the entire manuscript describing this experiment. [Doing better than random] (https://arxiv.org/abs/1909.13168)
