@@ -2,7 +2,7 @@
 Verifying hardware and software with deep learning
 ## Download
 
-Download the wheel file *VERIFAI.AI-1.0-py3-none-any.whl*
+Download the wheel file [*VERIFAI.AI-1.0-py3-none-any.whl*]https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl
 
 
 ## Using a Virtual Environment(Preferred)
