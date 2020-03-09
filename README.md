@@ -5,20 +5,20 @@ Verifying hardware and software with deep learning
 Download the wheel file [*VERIFAI.AI-1.0-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl)
 
 
-## Using a Virtual Environment(Preferred)
-
 ### Create a virtual environment
 
 ```bash
 python3 -m venv VerifaiAPI
 cp VERIFAI.AI-1.0-py3-none-any.whl VerifaiAPI/
+source VerifaiAPI/bin/activate
 cd VerifaiAPI
+python -m ensurepip
 ```
 
 ### Install the wheel file and then sign up
 
 ```bash
-pip install VERIFAI.AI-1.0-py3-none-any.whl
+bin/pip3 install VERIFAI.AI-1.0-py3-none-any.whl
 python bin/signup.py
 ```
 This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
@@ -34,9 +34,11 @@ python bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 
 Download tar ball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)
 
-Untar it
+Untar it and install requirements
 ```bash
 tar -xvf  *VERIFAI.AI-1.0.tar.gz*
+cd VERIFAI.AI-1.0
+pip install -r requirements.txt
 ```
 ```bash
 python signup.py
@@ -48,6 +50,7 @@ Run the sample optimize example Using
 python optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 ```
 
+
 ## Use case
 
 Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
@@ -55,10 +58,10 @@ The role of the optimizer is to find the best knob settings to maximize the valu
 
 The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimisation algorithms to find the optimum input knobs.
 
-Some other examples of this are in optimal control of electric power and
+Some other examples of this are in optimal control of electric power.
 
 
-## Hardware Verification Example: FIFO cache controller 
+## The FIFO cache controller experiment
 
 VCS installation instructions here
 
@@ -69,21 +72,10 @@ export VCS_HOME=<Path to VCS dir>
 ### Run FIFO run_sims
 
 ```bash
+cd example
 python run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ```
 
-### The FIFO cache controller experiment
-
-
-```bash
-export VCS_HOME=<Path to VCS dir>
-```
-
-### Run FIFO run_sims
-
-```bash
-python run_sims.py -c config.json -ir random_knobs.csv  -iter 2
-```
 
 ### The FIFO cache controller experiment
 
@@ -92,6 +84,7 @@ The first experiment was a Cache Controller design shown in Fig 1. The controlle
 
 <img src="images/image34.png"
          width="500" height="300" />
+
 
 Figure-1:  Cache Controller with 4 CPU Ports
 
@@ -122,4 +115,4 @@ The results shown in Figures below demonstrate how an RL-based approach can quic
 Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
 
 
-Here is a link to the entire manuscript describing this experiment. [Doing better than random] (https://arxiv.org/abs/1909.13168)
+Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
