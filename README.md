@@ -5,8 +5,8 @@ Verifying hardware and software with deep learning
 
 There are two options to download and install the VerifAI optimizer on your Linux or MacOS machine.
 
-1. Create a virtual environment  -- Download the wheel [*VERIFAI.AI-1.0-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl)     
-2. Use your existing python3 setup to run -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
+1. *Create a virtual environment*  -- Download the wheel [*VERIFAI.AI-1.0-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl)     
+2. *Use your existing python3 setup to run* -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
 
 
 ## Create a virtual environment
