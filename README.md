@@ -54,7 +54,7 @@ python optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 ```
 
 
-## Use case
+## Use cases
 
 Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
 The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
@@ -117,5 +117,6 @@ The results shown in Figures below demonstrate how an RL-based approach can quic
 
 Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
 
+The resulting plots are places in the folder 'images/mesi_cache_fifo' 
 
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
