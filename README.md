@@ -117,6 +117,7 @@ The results shown in Figures below demonstrate how an RL-based approach can quic
 
 Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
 
-The resulting plots are places in the folder 'images/mesi_cache_fifo' 
+The resulting plots are placed in the folder 'images/mesi_cache_fifo' 
+The resulting output of the optimizer are VERIFAI_RL_FIFO_input_*.csv , these are the inputs knobs settings for the simulator.
 
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
