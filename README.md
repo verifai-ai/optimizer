@@ -91,6 +91,7 @@ python run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ### The FIFO cache controller experiment
 
 Cache Controller Design - Experiment 1
+The Cache Controller design is an opensource from OPENCORES.ORG[www.opencores.org] and its licensed under LGPL[http://www.opencores.org/lgpl.shtml  ].
 The experiment is a Cache Controller design shown in Fig 1. The controller supports up to four CPU ports. Input transaction collisions are checked at the input stage where four FIFOs - one per CPU port - holds transactions which fail collision checks with transactions from another CPU ports and hence must be serviced later.
 
 <img src="images/image34.png"
