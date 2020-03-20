@@ -24,14 +24,14 @@ python3 -m venv VerifaiAPI
 cp VERIFAI.AI-1.0-py3-none-any.whl VerifaiAPI/
 source VerifaiAPI/bin/activate
 cd VerifaiAPI
-python -m ensurepip
+python3 -m ensurepip
 ```
 
 ### Install the wheel file and then sign up
 
 ```bash
 bin/pip3 install VERIFAI.AI-1.0-py3-none-any.whl
-python bin/signup.py
+python3 bin/signup.py
 ```
 This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
 
@@ -39,7 +39,7 @@ This lets user create a login for the api, with a username and password and rece
 ### Run the sample optimize example Using
 
 ```bash
-python bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
+python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 ```
 
 ##  Use your existing python3 setup 
@@ -49,16 +49,16 @@ Untar it and install requirements
 ```bash
 tar -xvf  *VERIFAI.AI-1.0.tar.gz*
 cd VERIFAI.AI-1.0
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ```bash
-python signup.py
+python3 signup.py
 ```
 
 Run the sample optimize example Using
 
 ```bash
-python optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
+python3 optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 ```
 
 
@@ -84,7 +84,7 @@ export VCS_HOME=<Path to VCS dir>
 
 ```bash
 cd example
-python run_sims.py -c config.json -ir random_knobs.csv  -iter 2
+python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ```
 
 
