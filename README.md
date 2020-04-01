@@ -44,7 +44,7 @@ python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 
 ##  Use your existing python3 setup 
 
-         ### (Note: You may need to install python dependencies manually using pip3)
+        
 
 
 Untar it and install requirements
