@@ -17,7 +17,7 @@ There are two options to download and install the VerifAI optimizer on your Linu
 2. *Use your existing python3 setup to run* -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
 
 
-## Create a virtual environment
+## Create a virtual environment (Recommended)
 
 ```bash
 python3 -m venv VerifaiAPI
@@ -42,7 +42,7 @@ This lets user create a login for the api, with a username and password and rece
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
 ```
 
-##  Use your existing python3 setup 
+##  Use your existing python3 setup (Note: You may need to install python dependencies manually using pip3)
 
 
 Untar it and install requirements
