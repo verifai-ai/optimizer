@@ -136,7 +136,7 @@ The resulting output of the optimizer are VERIFAI_RL_FIFO_input_*.csv , these ar
 There is also a combined plot generated that is called 'combined_actual.png' , this plot shows the 'ground truth' results from the simulator after each iteration.
 
 <img src="images/combined_actual.png"
-         width="400" height="400" />
+         width="400" height="600" />
 
 Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
