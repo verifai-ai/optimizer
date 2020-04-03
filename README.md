@@ -133,4 +133,11 @@ Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifa
 The resulting plots are placed in the folder 'images/mesi_cache_fifo' 
 The resulting output of the optimizer are VERIFAI_RL_FIFO_input_*.csv , these are the inputs knobs settings for the simulator.
 
+There is also a combined plot generated that is called 'combined_actual.png' , this plot shows the 'ground truth' results from the simulator after each iteration.
+
+<img src="images/combined_actual.png"
+         width="400" height="400" />
+
+Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
+
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
