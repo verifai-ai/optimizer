@@ -42,7 +42,7 @@ This lets user create a login for the api, with a username and password and rece
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
 ```
-[Now run the FIFO example](#Example 2: The FIFO Cache Controller experiment)
+[Now run the FIFO example](#Example-2:-The-FIFO-Cache-Controller-experiment)
 ```
 
 
