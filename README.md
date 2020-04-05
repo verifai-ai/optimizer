@@ -39,8 +39,10 @@ This lets user create a login for the api, with a username and password and rece
 ### Run the sample optimize example Using
 
 ```bash
-python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
+python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
+
+### Run the hardware example 
 
 ##  Use your existing python3 setup 
 
@@ -60,19 +62,8 @@ python3 signup.py
 Run the sample optimize example Using
 
 ```bash
-python3 optimize.py -c config.json -tr FIFO_knobs.csv -iter 3
+python3 optimize.py -c config.json -tr FIFO_knobs.csv
 ```
-
-
-## Use cases
-
-Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
-The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
-
-The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimisation algorithms to find the optimum input knobs.
-
-Some other examples of this are in optimal control of electric power.
-
 
 ## Hardware Verification Example: The FIFO cache controller experiment
 
@@ -141,3 +132,13 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
+
+## Other Use cases
+
+Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
+The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
+
+The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimisation algorithms to find the optimum input knobs.
+
+Some other examples of this are in optimal control of electric power.
+
