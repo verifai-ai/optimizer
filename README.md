@@ -45,28 +45,9 @@ python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 [Now run the FIFO example][Hardware Verification Example: The FIFO cache controller experiment]
 ```
 
-##  Use your existing python3 setup 
-
-        
 
 
-Untar it and install requirements
-```bash
-tar -xvf  *VERIFAI.AI-1.0.tar.gz*
-cd VERIFAI.AI-1.0
-pip3 install -r requirements.txt
-```
-```bash
-python3 signup.py
-```
-
-Run the sample optimize example Using
-
-```bash
-python3 optimize.py -c config.json -tr FIFO_knobs.csv
-```
-
-##  Example 2: The FIFO Cache Controller experiment
+###  Example 2: The FIFO Cache Controller experiment
 
 VCS installation instructions here
 
@@ -133,6 +114,25 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
+
+
+##  Use your existing python3 setup 
+
+Untar it and install requirements
+```bash
+tar -xvf  *VERIFAI.AI-1.0.tar.gz*
+cd VERIFAI.AI-1.0
+pip3 install -r requirements.txt
+```
+```bash
+python3 signup.py
+```
+
+Run the sample optimize example Using
+
+```bash
+python3 optimize.py -c config.json -tr FIFO_knobs.csv
+```
 
 ## Other Use cases
 
