@@ -41,8 +41,7 @@ This lets user create a login for the api, with a username and password and rece
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
-
-[Now run the hardware example] [Hardware Verification Example: The FIFO cache controller experiment]
+[Now run the FIFO example][Hardware Verification Example: The FIFO cache controller experiment]
 
 ##  Use your existing python3 setup 
 
