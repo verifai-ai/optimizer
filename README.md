@@ -36,12 +36,14 @@ python3 bin/signup.py
 This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
 
 
-### Run the sample optimize example
+### Example 1: Run the sample optimize example
 
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
+```
 [Now run the FIFO example][Hardware Verification Example: The FIFO cache controller experiment]
+```
 
 ##  Use your existing python3 setup 
 
@@ -64,7 +66,7 @@ Run the sample optimize example Using
 python3 optimize.py -c config.json -tr FIFO_knobs.csv
 ```
 
-## Hardware Verification Example: The FIFO cache controller experiment
+##  Example 2: The FIFO Cache Controller experiment
 
 VCS installation instructions here
 
@@ -80,7 +82,7 @@ python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ```
 
 
-### The FIFO cache controller experiment
+### About the Cache controller experiment
 
 Cache Controller Design - Experiment 1
 
