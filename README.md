@@ -14,7 +14,7 @@ Verifying hardware and software with deep learning
 There are two options to download and install the VerifAI optimizer on your Linux or MacOS machine.
 
 1. *Create a virtual environment*  -- Download the wheel [*VERIFAI.AI-1.0-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl)     
-2. *Use your existing python3 setup to run* -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
+2. [*Use your existing python3 setup to run*](#Use-your-existing-python3-setup) -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
 
 
 ## Create a virtual environment (Recommended)
@@ -41,10 +41,6 @@ This lets user create a login for the api, with a username and password and rece
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
-```
-[Now run the FIFO example](#Example-2-:-The-FIFO-Cache-Controller-experiment)
-```
-
 
 
 ###  Example 2: The FIFO Cache Controller experiment
