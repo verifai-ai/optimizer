@@ -4,7 +4,7 @@ Copyright 2020 Verifai Inc All Rights Reserved.
 
 ==============================================================================
 
-# verifai
+# VerifAI Inc
 Verifying hardware and software with deep learning
 
 
