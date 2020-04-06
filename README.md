@@ -36,7 +36,7 @@ python3 bin/signup.py
 This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
 
 
-### Example 1: Run the sample optimize example
+### Example 1: Run the sample optimizer example (test the flow)
 
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
