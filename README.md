@@ -55,7 +55,7 @@ export VCS_HOME=<Path to VCS dir>
 
 ```bash
 cd example
-python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 2
+python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 3
 ```
 
 
