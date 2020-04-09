@@ -14,7 +14,7 @@ The role of the optimizer is to find the best *knob settings* to maximize the va
 
 '''
 <img src="images/OptimizerCSV.png"
-         width="500" height="300" />
+         width="600" height="200" />
  '''
 
 The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
