@@ -10,7 +10,12 @@ Verifying hardware and software with deep learning
 ## About VerifAI Optimizer
 
 Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
-The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
+The role of the optimizer is to find the best *knob settings* to maximize the value of the *target columns*.
+
+'''
+<img src="images/OptimizerCSV.png"
+         width="500" height="300" />
+ '''
 
 The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
 
