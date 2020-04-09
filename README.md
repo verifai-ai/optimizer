@@ -7,6 +7,14 @@ Copyright 2020 Verifai Inc All Rights Reserved.
 # VerifAI Optimizer
 Verifying hardware and software with deep learning
 
+## About VerifAI Optimizer
+
+Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
+The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
+
+The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
+
+Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [A Cache Controller](#About the Cache controller experiment).
 
 
 ## Installation
@@ -130,12 +138,4 @@ Run the sample optimize example Using
 python3 optimize.py -c config.json -tr FIFO_knobs.csv
 ```
 
-## Other Use cases
-
-Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
-The role of the optimizer is to find the best knob settings to maximize the value of the target variable.
-
-The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimisation algorithms to find the optimum input knobs.
-
-Some other examples of this are in optimal control of electric power.
 
