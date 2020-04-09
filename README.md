@@ -14,7 +14,7 @@ The role of the optimizer is to find the best knob settings to maximize the valu
 
 The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
 
-Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [A Cache Controller](#About-the-Cache-controller-experiment).
+Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [A Cache Controller](#Example-2:-The-FIFO-Cache-Controller-experiment).
 
 
 ## Installation
