@@ -6,6 +6,7 @@ Copyright 2020 Verifai Inc All Rights Reserved.
 
 # VerifAI Optimizer
 Verifying hardware and software with deep learning
+Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
 
 ## About VerifAI Optimizer
 
@@ -20,7 +21,6 @@ Example dataset CSV file
 The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
 
 Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [MESI Cache Controller](#Example-2-The-FIFO-Cache-Controller-experiment) from [opencores.org](http://www.opencores.org)
-
 
 ## Installation
 
@@ -122,7 +122,24 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 
 Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
-Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
+
+### Example 3 Run your own CSV file thru the optimizer
+
+Upload your dataset in CSV format and identify the columns that are 'knobs' and the ones that are the 'target columns'.
+Edit the file config.json and reflect the knobs and columns you want to optimize.
+
+'''
+"Config": {
+       "RewardPredictor":{
+          "reward_column": ["mean_fifo_depth_0","mean_fifo_depth_1","mean_fifo_depth_2","mean_fifo_depth_3"], <<--- change thi
+          "experiment_type":"FIFO",      <<--- your experiment name
+           "reward_stat": "average",   <<-- If you have multiple reward_columns specified, you can specify 'max | min | average'
+                                       <<-- If single column name, this value should be None
+           }                                       
+        }
+
+python3 bin/optimize.py -c config.json -tr <your-dataset.csv>
+```
 
 
 ##  Use your existing python3 setup 
