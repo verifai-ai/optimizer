@@ -132,12 +132,12 @@ Edit the file config.json and reflect the knobs and columns you want to optimize
 Example dataset CSV file
 
 <img src="images/TempOptimizer.png"
-         width="600" height="60" />
+         width="600" height="90" />
 
 ```
 "Config": {
   "RewardPredictor":{
-    "reward_column": ["MonthlyCost"], <<-- Change this
+    "reward_column": ["CostPerMonth"], <<-- Change this
     "experiment_type":"TempratureControl",  <<-- Your experiment name
     "reward_stat": Null,  <<-- If you have multiple reward_columns, you can specify 'max | min | average'
                                <<-- If single column name, this value should be None
