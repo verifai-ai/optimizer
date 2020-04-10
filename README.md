@@ -132,14 +132,14 @@ Edit the file config.json and reflect the knobs and columns you want to optimize
 Example dataset CSV file
 
 <img src="images/TempOptimizer.png"
-         width="650" height="100" />
+         width="600" height="60" />
 
 ```
 "Config": {
   "RewardPredictor":{
-    "reward_column": ["mean_fifo_depth_0","mean_fifo_depth_1","mean_fifo_depth_2","mean_fifo_depth_3"], <<-- Change this
-    "experiment_type":"FIFO",  <<-- Your experiment name
-    "reward_stat": "average",  <<-- If you have multiple reward_columns, you can specify 'max | min | average'
+    "reward_column": ["MonthlyCost"], <<-- Change this
+    "experiment_type":"TempratureControl",  <<-- Your experiment name
+    "reward_stat": Null,  <<-- If you have multiple reward_columns, you can specify 'max | min | average'
                                <<-- If single column name, this value should be None
       }                                       
   }
