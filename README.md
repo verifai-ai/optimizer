@@ -12,6 +12,7 @@ Verifying hardware and software with deep learning
 Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
 The role of the optimizer is to find the best *knob settings* to maximize the value of the *target columns*.
 
+Example dataset CSV file
 <img src="images/OptimizerCSV.png"
          width="650" height="100" />
          
