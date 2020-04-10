@@ -14,6 +14,7 @@ Let's say we have a dataset with a set of input features which can be controllab
 The role of the optimizer is to find the best *knob settings* to maximize the value of the *target columns*.
 
 Example dataset CSV file
+
 <img src="images/OptimizerCSV.png"
          width="650" height="100" />
          
@@ -127,6 +128,11 @@ Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (gr
 
 Upload your dataset in CSV format and identify the columns that are 'knobs' and the ones that are the 'target columns'.
 Edit the file config.json and reflect the knobs and columns you want to optimize.
+
+Example dataset CSV file
+
+<img src="images/OptimizerCSV.png"
+         width="650" height="100" />
 
 ```
 "Config": {
