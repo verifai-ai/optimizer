@@ -49,14 +49,14 @@ python3 bin/signup.py
 This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
 
 
-### Example 1: Run the sample optimizer example (test the flow)
+## Example 1 Run the sample optimizer example (test the flow)
 
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 ```
 
 
-### Example 2 The FIFO Cache Controller experiment
+## Example 2 The FIFO Cache Controller experiment
 
 VCS installation instructions here
 
@@ -123,7 +123,7 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
 
-### Example 3 Run your own CSV file thru the optimizer
+## Example 3 Run your own CSV file thru the optimizer
 
 Upload your dataset in CSV format and identify the columns that are 'knobs' and the ones that are the 'target columns'.
 Edit the file config.json and reflect the knobs and columns you want to optimize.
