@@ -130,13 +130,13 @@ Edit the file config.json and reflect the knobs and columns you want to optimize
 
 ```
 "Config": {
-   "RewardPredictor":{
-     "reward_column": ["mean_fifo_depth_0","mean_fifo_depth_1","mean_fifo_depth_2","mean_fifo_depth_3"], <<--- change this
-     "experiment_type":"FIFO",   <<--- your experiment name
-     "reward_stat": "average",   <<-- If you have multiple reward_columns specified, you can specify 'max | min | average'
-                                 <<-- If single column name, this value should be None
-        }                                       
-    }
+  "RewardPredictor":{
+    "reward_column": ["mean_fifo_depth_0","mean_fifo_depth_1","mean_fifo_depth_2","mean_fifo_depth_3"], <<-- Change this
+    "experiment_type":"FIFO",   <<-- Your experiment name
+    "reward_stat": "average",   <<-- If you have multiple reward_columns, you can specify 'max | min | average'
+                                <<-- If single column name, this value should be None
+      }                                       
+  }
 
 python3 bin/optimize.py -c config.json -tr <your-dataset.csv>
 ```
