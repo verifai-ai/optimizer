@@ -23,6 +23,8 @@ The optimizer uses both supervised and reinforcement learning to map the knobs t
 
 Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [MESI Cache Controller](#Example-2-The-FIFO-Cache-Controller-experiment) from [opencores.org](http://www.opencores.org)
 
+You can also run your [own datasets](#Example-3-Run-your-own-CSV-file-thru-the-optimizer) thru the optimizer to find the best *knob settings* to maximize  *target column(s)*
+
 ## Installation
 
 There are two options to download and install the VerifAI optimizer on your Linux or MacOS machine.
