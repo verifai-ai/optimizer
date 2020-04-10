@@ -128,7 +128,7 @@ Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (gr
 Upload your dataset in CSV format and identify the columns that are 'knobs' and the ones that are the 'target columns'.
 Edit the file config.json and reflect the knobs and columns you want to optimize.
 
-'''
+```
 "Config": {
        "RewardPredictor":{
           "reward_column": ["mean_fifo_depth_0","mean_fifo_depth_1","mean_fifo_depth_2","mean_fifo_depth_3"], <<--- change thi
