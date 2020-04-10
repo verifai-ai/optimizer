@@ -132,7 +132,7 @@ Edit the file config.json and reflect the knobs and columns you want to optimize
 Example dataset CSV file
 
 <img src="images/TempOptimizer.png"
-         width="620" height="90" />
+         width="650" height="90" />
 
 ```
 "Config": {
