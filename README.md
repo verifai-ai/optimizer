@@ -23,8 +23,8 @@ The optimizer uses both supervised and reinforcement learning to map the knobs t
 
 Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [MESI Cache Controller](#Example-2-The-FIFO-Cache-Controller-experiment) from [opencores.org](http://www.opencores.org).
 
-Maximizing the FIFO queue depth is a non-trivial task for random tests, and requires a DV expert to write a directed-tests..
-This example proves that the VerifAI Optimizer, can maximize the FIFO depth significantly better than a random test, and also better than a directed test.
+Maximizing the FIFO queue depth is a non-trivial task for random tests, and requires a DV expert to write directed-tests to achieve high FIFO queue depths.
+This example shows that the VerifAI Optimizer, can maximize the FIFO depth significantly better than a random test, and also better than  directed tests.
 
 You can also run your [own csv datasets](#Example-3-Run-your-own-CSV-file-thru-the-optimizer) thru the optimizer to find the best *knob settings* to maximize  *target column(s)*
 
