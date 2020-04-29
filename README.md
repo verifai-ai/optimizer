@@ -1,3 +1,7 @@
+   <img src="images/4-BlackLogo-01.png"
+         width="100" height="58" />
+    
+
 =============================================================================                                                        
 
 Copyright 2020 Verifai Inc All Rights Reserved.                                                                                         
