@@ -63,11 +63,11 @@ python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 This will produce a CSV file and a combined_histogram.png plot.
 ```
 <img src="images/combined_histogram.png"
-         width="500" height="300" />
+         width="400" height="600" />
 
 Figure-1: The histogram distribution of the column to optimize has been shifted to the right using the optimizer
 
-## Example 3 The FIFO Cache Controller experiment
+## Example 2 The FIFO Cache Controller experiment
 
 VCS installation instructions here
 
