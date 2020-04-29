@@ -59,10 +59,15 @@ This lets user create a login for the api, with a username and password and rece
 
 ```bash
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
+
+This will produce a CSV file and a combined_histogram.png plot.
 ```
+<img src="images/combined_histogram.png"
+         width="500" height="300" />
 
+Figure-1: The histogram distribution of the column to optimize has been shifted to the right using the optimizer
 
-## Example 2 The FIFO Cache Controller experiment
+## Example 3 The FIFO Cache Controller experiment
 
 VCS installation instructions here
 
@@ -90,7 +95,7 @@ The experiment is a Cache Controller design shown in Fig 1. The controller suppo
          width="500" height="300" />
 
 
-Figure-1:  Cache Controller with 4 CPU Ports
+Figure-2:  Cache Controller with 4 CPU Ports
 
 Input FIFO’s can be so difficult to fill in the presence of random traffic that it seldom or perhaps never reaches a full state even across a very large number of simulations. This has implications for DV coverage since the FIFO must be filled in order to ensure correct operation and to uncover bugs resulting from a FIFO full condition.
 After a suitable number of simulation runs were completed, the resulting DV control settings and the corresponding FIFO occupancy simulation results were fed to an VerifAI-RL agent which, once trained, generated a set of recommended settings to use in a subsequent set of runs. After completing this second set of simulation runs using the settings from the RL agent, the results were again fed into the RL agent which generated a subsequent improved set of recommended settings. This process is summarized in Figure-2  below:
@@ -98,7 +103,7 @@ After a suitable number of simulation runs were completed, the resulting DV cont
 <img src="images/FIFO-RL-Img1.png"
          width="500" height="300" />
 
-Figure-2:  Cache Controller Design VerifAI-RL Flow
+Figure-3:  Cache Controller Design VerifAI-RL Flow
 
 
 Figure below shows the resulting FIFO occupancy for each subsequent iteration (red curve).
@@ -106,7 +111,7 @@ Figure below shows the resulting FIFO occupancy for each subsequent iteration (r
 <img src="images/FIFO-RL-Img3.png"
          width="600" height="400" />
 
-Figure-3:  FIFO Occupancy with VerifAI-RL generated knobs versus Random
+Figure-4:  FIFO Occupancy with VerifAI-RL generated knobs versus Random
 
 Note that the RL agent quickly learns how to adjust the DV environment control settings in order to maximize the FIFO occupancy. A set of runs using purely random settings without the benefit of RL-based machine learning is also shown for comparison (blue curve).
 The results shown in Figures below demonstrate how an RL-based approach can quickly and automatically optimize design coverage parameters resulting in better design coverage and accelerated stress testing of a design.
@@ -116,7 +121,7 @@ The results shown in Figures below demonstrate how an RL-based approach can quic
    <img src="images/FIFO-RL-Img2.png"
  width="400" height="400" />
 
-Figure 4:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
+Figure-5:  Average  FIFO Depth with Random Stimulus and Iteration-6 using Verifai’s ML/RL
 
 The resulting plots are placed in the folder 'images/mesi_cache_fifo' 
 The resulting output of the optimizer are VERIFAI_RL_FIFO_input_*.csv , these are the inputs knobs settings for the simulator.
@@ -126,7 +131,7 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 <img src="images/combined_actual.png"
          width="400" height="600" />
 
-Figure 5:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
+Figure-6:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
 
 ## Example 3 Run your own CSV file thru the optimizer
