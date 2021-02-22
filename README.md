@@ -82,14 +82,21 @@ fifo_results.png         -----  Final Histogram with your results and scores
 Figure-2: The FIFO DV Challenge Results
 
 ### Hacking DNN hyper-parameters in the config.json file to improve your scores
+
 -- Change the hidden_units to specify different hidden layers
+
 -- Change the ensemble_size to specify a larger or smaller ensemble network
+
 -- Change the number of training epochs : training_num_epochs
+
 -- Change the number of knob settings to generate per iteration: num_knobs_to_generate":100  (This will increase run time)
+
 -- Change the num_rand_iterations: Increasing this will result in an increase in runtime
 
 ### Hacking the DV test-bench
+
 -- If you are a DV expert, feel free to hack the test-bench to improve your scores
+
 -- If you submit your scores for consideration for the DV Challenge, you will be required to mail your changes to the test-bench to hello@verifai.ai
 
 
