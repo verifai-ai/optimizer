@@ -12,25 +12,6 @@ Copyright 2020 Verifai Inc All Rights Reserved.
 Verifying hardware and software with deep learning
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
 
-## About VerifAI Optimizer
-
-Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
-The role of the optimizer is to find the best *knob settings* to maximize the value of the *target columns*.
-
-Example dataset CSV file
-
-<img src="images/OptimizerCSV.png"
-         width="650" height="100" />
-         
-
-The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
-
-Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [MESI Cache Controller](#Example-2-The-FIFO-Cache-Controller-experiment) from [opencores.org](http://www.opencores.org).
-
-Maximizing the FIFO queue depth is a non-trivial task for random tests, and requires a DV expert to write directed-tests to achieve high FIFO queue depths.
-This example shows that the VerifAI Optimizer, can maximize the FIFO depth significantly better than a random test, and also better than  directed tests.
-
-You can also run your [own csv datasets](#Example-3-Run-your-own-CSV-file-thru-the-optimizer) thru the optimizer to find the best *knob settings* to maximize  *target column(s)*
 
 ## Installation
 
@@ -71,12 +52,12 @@ This will produce a CSV file and a combined_histogram.png plot.
 
 Figure-1: The histogram distribution of the column to optimize has been shifted to the right using the optimizer
 
-## The FIFO Cache Controller DV Challenge
+## DV Challenge #1 The FIFO Cache Controller 
 
 ### Install Verilator 
-```
+
 The first step is installing [Verilator](https://www.veripool.org/projects/verilator/wiki/Installing) on your machine. 
-```
+
 
 ### Run FIFO run_sims
 
@@ -150,6 +131,25 @@ There is also a combined plot generated that is called 'combined_actual.png' , t
 
 Figure-6:  Average FIFO Depth after each batched-iteration of the simulation (ground truth)
 
+## About VerifAI Optimizer
+
+Let's say we have a dataset with a set of input features which can be controllable knobs for a particular target column. These knobs can be set on some simulator and the simulator returns the value of the target variable for those settings.
+The role of the optimizer is to find the best *knob settings* to maximize the value of the *target columns*.
+
+Example dataset CSV file
+
+<img src="images/OptimizerCSV.png"
+         width="650" height="100" />
+         
+
+The optimizer uses both supervised and reinforcement learning to map the knobs to the reward using a neural network as a function approximator and then uses global optimization algorithms to find the optimum input knobs.
+
+Some other examples of this are in optimal control of electric power. In this repo we will demonstrate how to optimize and fill up the FIFO queues on a [MESI Cache Controller](#Example-2-The-FIFO-Cache-Controller-experiment) from [opencores.org](http://www.opencores.org).
+
+Maximizing the FIFO queue depth is a non-trivial task for random tests, and requires a DV expert to write directed-tests to achieve high FIFO queue depths.
+This example shows that the VerifAI Optimizer, can maximize the FIFO depth significantly better than a random test, and also better than  directed tests.
+
+You can also run your [own csv datasets](#Example-3-Run-your-own-CSV-file-thru-the-optimizer) thru the optimizer to find the best *knob settings* to maximize  *target column(s)*
 
 ## Example 3 Run your own CSV file thru the optimizer
 
