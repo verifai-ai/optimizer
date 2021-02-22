@@ -9,7 +9,7 @@ Copyright 2020 Verifai Inc All Rights Reserved.
 ==============================================================================
 
 # VerifAI Optimizer
-Verifying hardware and software with deep learning
+Verifying hardware and software with deep learning. 
 Here is a link to the entire article published on Arxiv describing this experiment. [Doing better than random](https://arxiv.org/abs/1909.13168)
 
 
@@ -24,20 +24,22 @@ There are two options to download and install the VerifAI optimizer on your Linu
 ## Create a virtual environment (Recommended)
 
 ```bash
-python3 -m venv VerifaiAPI
+python3 -m venv verifai
 cp VERIFAI.AI-1.0-py3-none-any.whl VerifaiAPI/
-source VerifaiAPI/bin/activate
-cd VerifaiAPI
+source verifai/bin/activate
+cd verifai
 python3 -m ensurepip
 ```
 
 ### Install the wheel file and then sign up
 
 ```bash
-bin/pip3 install VERIFAI.AI-1.0-py3-none-any.whl
+cp <path-to>/VERIFAI.AI-1.X-py3-none-any.whl . 
+bin/pip3 install VERIFAI.AI-1.X-py3-none-any.whl
 python3 bin/signup.py
 ```
-This lets user create a login for the api, with a username and password and receive a token to access the VerifaiAPI
+This lets users create a login for the api, with a username and password and receive a token to access the VerifaiAPI Server
+If you already have credentials on the VerifAI server, skip to the next step and use that username and password to signin, when prompted.
 
 
 ## Example 1 Run the sample optimizer example (test the flow)
@@ -74,6 +76,22 @@ VERIFAI_RL_FIFO_input_2.csv
 VERIFAI_RL_FIFO_output_2.csv
 fifo_results.png         -----  Final Histogram with your results and scores
 ```
+<img src="images/fifo_results.png"
+         width="400" height="600" />
+
+Figure-2: The FIFO DV Challenge Results
+
+### Hacking DNN hyper-parameters in the config.json file to improve your scores
+-- Change the hidden_units to specify different hidden layers
+-- Change the ensemble_size to specify a larger or smaller ensemble network
+-- Change the number of training epochs : training_num_epochs
+-- Change the number of knob settings to generate per iteration: num_knobs_to_generate":100  (This will increase run time)
+-- Change the num_rand_iterations: Increasing this will result in an increase in runtime
+
+### Hacking the DV test-bench
+-- If you are a DV expert, feel free to hack the test-bench to improve your scores
+-- If you submit your scores for consideration for the DV Challenge, you will be required to mail your changes to the test-bench to hello@verifai.ai
+
 
 ### Submiting your Scores
 ```
