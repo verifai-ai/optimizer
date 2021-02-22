@@ -71,21 +71,31 @@ This will produce a CSV file and a combined_histogram.png plot.
 
 Figure-1: The histogram distribution of the column to optimize has been shifted to the right using the optimizer
 
-## Example 2 The FIFO Cache Controller experiment
+## The FIFO Cache Controller DV Challenge
 
-VCS installation instructions here
-
-```bash
-export VCS_HOME=<Path to VCS dir>
-```
+The first step is installing [Verilator](https://www.veripool.org/projects/verilator/wiki/Installing) on your machine. 
 
 ### Run FIFO run_sims
 
 ```bash
-cd example
+cd FIFO
 python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 3
 ```
+### Expected Results
+```
+The run_sims.py command will produce multiple output files that look like this:
+VERIFAI_RL_FIFO_input_1.csv   --- Output from the Simulator and Input to the VerifAI Optimizer
+VERIFAI_RL_FIFO_output_1.csv  --- Output from the Optimizer and Input to the Simulator
+VERIFAI_RL_FIFO_input_2.csv
+VERIFAI_RL_FIFO_output_2.csv
+fifo_results.png         -----  Final Histogram with your results and scores
+```
 
+### Submiting your Scores
+```
+To submit your scores for consideration to the DV Challenge, do the following:
+bin/submit-challenge
+```
 
 ### About the Cache controller experiment
 
