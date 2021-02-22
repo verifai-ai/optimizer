@@ -74,7 +74,7 @@ Figure-1: The histogram distribution of the column to optimize has been shifted 
 ## The FIFO Cache Controller DV Challenge
 
 ### Install Verilator 
-```bash
+```
 The first step is installing [Verilator](https://www.veripool.org/projects/verilator/wiki/Installing) on your machine. 
 ```
 
