@@ -17,15 +17,15 @@ Here is a link to the entire article published on Arxiv describing this experime
 
 There are two options to download and install the VerifAI optimizer on your Linux or MacOS machine.
 
-1. *Create a virtual environment*  -- Download the wheel [*VERIFAI.AI-1.0-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0-py3-none-any.whl)     
-2. [*Use your existing python3 setup to run*](#Use-your-existing-python3-setup) -- Download a tarball [*VERIFAI.AI-1.0.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.0.tar.gz)  
+1. *Create a virtual environment*  -- Download the wheel [*VERIFAI.AI-1.5-py3-none-any.whl*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.5-py3-none-any.whl)     
+2. [*Use your existing python3 setup to run*](#Use-your-existing-python3-setup) -- Download a tarball [*VERIFAI.AI-1.5.tar.gz*](https://github.com/verifai-ai/optimizer/blob/master/VERIFAI.AI-1.5.tar.gz)  
 
 
 ## Create a virtual environment (Recommended)
 
 ```bash
 python3 -m venv verifai
-cp VERIFAI.AI-1.0-py3-none-any.whl VerifaiAPI/
+cp VERIFAI.AI-1.5-py3-none-any.whl verifai/
 source verifai/bin/activate
 cd verifai
 python3 -m ensurepip
@@ -34,8 +34,7 @@ python3 -m ensurepip
 ### Install the wheel file and then sign up
 
 ```bash
-cp <path-to>/VERIFAI.AI-1.X-py3-none-any.whl . 
-bin/pip3 install VERIFAI.AI-1.X-py3-none-any.whl
+bin/pip3 install VERIFAI.AI-1.5-py3-none-any.whl
 python3 bin/signup.py
 ```
 This lets users create a login for the api, with a username and password and receive a token to access the VerifaiAPI Server
@@ -204,8 +203,8 @@ python3 bin/optimize.py -c config.json -tr <your-dataset.csv>
 
 Untar it and install requirements
 ```bash
-tar -xvf  *VERIFAI.AI-1.0.tar.gz*
-cd VERIFAI.AI-1.0
+tar -xvf  *VERIFAI.AI-1.5.tar.gz*
+cd VERIFAI.AI-1.5
 pip3 install -r requirements.txt
 ```
 ```bash
