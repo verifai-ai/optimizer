@@ -64,7 +64,7 @@ The first step is installing [Verilator](https://www.veripool.org/projects/veril
 
 ```bash
 cd FIFO
-python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 3
+python3 run_sims.py -c config.json -ir random_knobs.csv  -iter 2
 ```
 ### Expected Results
 ```
