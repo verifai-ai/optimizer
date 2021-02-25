@@ -34,7 +34,6 @@ python3 -m ensurepip
 ### Install the wheel file and then sign up
 
 ```bash
-export VERIFAI_HOME=~/verifai
 bin/pip3 install VERIFAI.AI-1.5-py3-none-any.whl
 python3 bin/signup.py
 ```
@@ -45,6 +44,7 @@ If you already have credentials on the VerifAI server, skip to the next step and
 ## Example 1 Run the sample optimizer example (test the flow)
 
 ```bash
+export VERIFAI_HOME=~/verifai
 python3 bin/optimize.py -c config.json -tr FIFO_knobs.csv
 
 This will produce a CSV file and a combined_histogram.png plot.
