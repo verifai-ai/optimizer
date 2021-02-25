@@ -34,6 +34,7 @@ python3 -m ensurepip
 ### Install the wheel file and then sign up
 
 ```bash
+export VERIFAI_HOME=~/verifai
 bin/pip3 install VERIFAI.AI-1.5-py3-none-any.whl
 python3 bin/signup.py
 ```
